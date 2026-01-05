@@ -14,7 +14,8 @@ cd dlstreamer
 
 ## Step 2: Run installation script
 
-Open PowerShell as administrator and run the `/build_dlstreamer_dlls.ps1` script.
+Open PowerShell as administrator and run the `build_dlstreamer_dlls.ps1` script.
+
 
 ```
 cd ./dlstreamer/
