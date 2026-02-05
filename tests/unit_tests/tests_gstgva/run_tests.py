@@ -28,6 +28,7 @@ import test_pipeline_gvapython_vaapi
 import test_pipeline_human_pose_estimation
 import test_pipeline_action_recognition
 import test_pipeline_optimizer
+import test_pipeline_gvafpsthrottle
 import test_pipeline_g3dradarprocess
 
 if __name__ == '__main__':
@@ -62,6 +63,8 @@ if __name__ == '__main__':
     suite_gstgva.addTests(loader.loadTestsFromModule(
         test_pipeline_human_pose_estimation))
     suite_gstgva.addTests(loader.loadTestsFromModule(
+        test_pipeline_gvafpsthrottle))
+    suite_gstgva.addTests(loader.loadTestsFromModule(
         test_pipeline_g3dradarprocess))
 
     runner = unittest.TextTestRunner(verbosity=3)
@@ -73,3 +76,4 @@ if __name__ == '__main__':
     else:
         print("GVA-python tests has failed.")
         exit(1)
+
